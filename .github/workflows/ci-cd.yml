@@ -25,7 +25,7 @@ jobs:
           pip install -r requirements.txt
 
       - name: 4. Run Automated Pytest Suite
-        run: pytest
+        run: python -m pytest
 
       - name: 5. Build Docker Container Image
         run: docker build -t dataguard-app:latest .
